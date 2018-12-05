@@ -210,7 +210,7 @@ function validateKeys(object, expectedKeys) {
 		return false;
 	}
   for (let i = 0; i < expectedKeys.length; i++) {
-		if (!Object.keys(object).find(function(k){ return k === expectedKeys[i]){
+		if (!Object.keys(object).find(k =>  k === expectedKeys[i])){
 			return false;
 		}
 		else {
